@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+header {
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(14, 136, 188);
+  transform: skewY(-10deg);
+  transform-origin: 0;
+  z-index: -1;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 40vw;
+  z-index: 2;
+}
+.image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 4px 4px 5px gray;
+}
+
+.image-wrapper h1 {
+  width: 100%;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+
+.about-wrapper {
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-sizing: border-box;
+  width: 40vw;
+  padding: 2rem 2rem 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 8px gray;
+  border-radius: 11px;
+}
+
+.about-wrapper h2 {
+  font-weight: 500;
+}
+
+.about-wrapper p {
+  font-weight: 300;
+}
+
+.about-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.about-icons a {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+i {
+  transition: transform 0.3s, color 0.3s;
+}
+
+i:hover {
+  transform: scale(1.2);
+  color: rgb(14, 136, 188);
+}
