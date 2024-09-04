@@ -69,17 +69,24 @@ header::before {
 }
 
 .about-icons a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #000;
 }
 
 i {
-  transition: transform 0.3s, color 0.3s;
+  transition: transform 0.2s;
   cursor: pointer;
 }
 
 i:hover {
   transform: scale(1.2);
+}
+
+header i {
+  transition: transform 0.3s, color 0.3s;
+}
+
+header i:hover {
   color: rgb(14, 136, 188);
 }
 
@@ -135,4 +142,35 @@ main {
 .project-heading i {
   font-size: 1.3rem;
   color: #000;
+}
+
+/* Footer section */
+footer {
+  padding: 2rem 3.2rem;
+
+  background-color: rgb(14, 136, 188);
+  color: #fff;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.footer-icons a {
+  color: #fff;
 }
